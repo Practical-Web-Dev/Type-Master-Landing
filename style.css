@@ -26,6 +26,11 @@ input {
   z-index: 4;
 }
 
+input,
+textarea {
+  transform: perspective(1px);
+}
+
 /* 
 
 
