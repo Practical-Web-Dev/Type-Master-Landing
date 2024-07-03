@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/desktop/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Typemaster | Coming Soon</title>
+</head>
+
+<body id="body">
+
+  <div class="email-modal">
+    <div class="close-modal">X</div>
+    <div class="modal-text">
+      <h2>Take <span id="orange-txt" class="bold-txt">15% OFF</span></h2>
+      <p>your first purchase</p>
+      <form class="modal-form">
+        <input id="email-input" type="email" placeholder="Enter Your Email Here">
+        <div id="error-message"></div>
+        <button type="submit" class="modal-btn">Send Offer</button>
+        <small>*Valid for first time customers only</small>
+      </form>
+    </div>
+  </div>
+
+  <div id="payment-modal">
+    <div class="close-payement-modal">X</div>
+    <div class="pl-4">
+      <h3>Payment Methods</h3>
+      <form id="payment-form">
+        <div class="radio-container">
+          <input type="radio" id="credit-card-radio" name="payment-input" value="Debit or Credit Card">
+          <label class="radio-label" for="credit-card-radio">Debit or Credit Card</label>
+        </div>
+        <div class="radio-container">
+          <input type="radio" id="paypal-radio" name="payment-input" value="PayPal">
+          <label for="credit-card-radio">PayPal</label>
+        </div>
+        <div class="input-flex-container">
+          <div class="text-input">
+            <input type="text" required>
+            <p class="input-label">First Name</p>
+          </div>
+          <div class="text-input">
+            <input type="text" required>
+            <p class="input-label">Last Name</p>
+          </div>
+        </div>
+        <div class="input-flex-container">
+          <div class="text-input">
+            <input type="text" placeholder="Credit Card Number" minlength="16" maxlength="16" required>
+            <p class="input-label">Credit Card Number</p>
+          </div>
+          <div>
+            <input type="text" placeholder="(CVC)" minlength="3" maxlength="3" required>
+            <p class="input-label">Security Code</p>
+          </div>
+        </div>
+        <div class="input-container">
+          <input type="text" placeholder="MM/YY" minlength="4" maxlength="4" required>
+          <p class="input-label">Card Expiration</p>
+        </div>
+        <button type="submit" id="payment-btn">Place Order</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./img/desktop/logo.svg" alt="Typemaster logo">
+        </div>
+        <div class="nav-btn">
+          <button class="btn gray-btn uppercase pre-order-btn">pre-order now</button>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <section id="pre-order">
+    <img src="img/desktop/pattern-square.svg" class="square">
+    <div class="container">
+      <div class="pre-order-content-container">
+        <div class="pre-order-text">
+          <h1 class="uppercase">typemaster keyboard</h1>
+          <p>Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing
+            experience.</p>
+          <div class="pre-order-btn-container">
+            <button class="btn orange-btn uppercase pre-order-btn">pre-order now</button>
+            <p class="uppercase">release on 10/27</p>
+          </div>
+        </div>
+        <div class="pre-order-img">
+          <img src="img/desktop/image-keyboard.jpg" alt="typemaster keyboard">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desktop/Mobile Product Descritption HTML -->
+  <section id="product-description">
+    <img src="img/desktop/pattern-square.svg" class="square-product-description">
+    <div class="container">
+      <div class="product-description-content-container">
+        <div class="product-images-container">
+          <div class="orange-img-container">
+            <img class="orange-img" src="./img/desktop/image-phone-and-keyboard.jpg" alt="keyboard and phone">
+          </div>
+          <div>
+            <img class="glass-img" src="./img/desktop/image-glass-and-keyboard.jpg" alt="keyboard with glass">
+          </div>
+        </div>
+        <div class="product-description-text">
+          <h2 class="uppercase">mechanical wireless
+            Keyboard</h2>
+          <p>The Typemaster keyboard boasts
+            top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable
+            wireless
+            connectivity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tablet Product Descritption HTML -->
+  <section id="tablet-product-description">
+    <div class="container">
+      <div class="tablet-product-images-container">
+        <div class="orange-img-container">
+          <img src="./img/tablet/image-phone-and-keyboard.jpg" alt="keyboard and smartphone" class="tablet-orange-img">
+        </div>
+        <div>
+          <img src="./img/tablet/image-glass-and-keyboard.jpg" alt="keyboard and glass" class="tablet-phone-glass-img">
+        </div>
+      </div>
+      <div class="tablet-product-text-container">
+        <h2>
+          mechanical wireless
+          Keyboard
+        </h2>
+        <p>
+          The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and
+          keycaps,
+          along with reliable wireless connectivity.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="features">
+      <div class="feature">
+        <img class="feature-icon" src="img/desktop/compatible-icon.png" alt="compatible">
+        <h3>HIGHLY
+          COMPATIBLE</h3>
+        <p>Easy to use and works well with all major computer brands, gaming consoles and mobile devices. Plug & play,
+          no
+          installation or driver needed.</p>
+      </div>
+      <div class="feature">
+        <img class="feature-icon" src="img/desktop/bluetooth-icon.png" alt="compatible">
+        <h3>WIRELESS
+          WITH BLUETOOTH</h3>
+        <p>Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. Simply plug the
+          unifying
+          receiver into your computer.</p>
+      </div>
+      <div class="feature">
+        <img class="feature-icon" src="img/desktop/battery-icon.png" alt="compatible">
+        <h3>HIGH CAPACITY
+          BATTERY</h3>
+        <p>Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. Enjoy
+          40
+          hours of
+          usage time between charges.</p>
+      </div>
+      <div class="feature">
+        <img class="feature-icon" src="img/desktop/backlit-icon.png" alt="compatible">
+        <h3>RGB BACKLIT
+          MODES</h3>
+        <p class="orange-txt">Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows
+          intensely in the
+          dark
+          and helps
+          you type in low light conditions.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p class="footer-text"><span class="bold-txt">Typemaster 2024</span> | All Rights Reserved</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
