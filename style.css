@@ -199,6 +199,7 @@ Payment Modal
 .input-flex-container {
   display: flex;
   align-items: center;
+  column-gap: 2rem;
 }
 
 
@@ -211,12 +212,12 @@ input[type=text] {
   width: 220px;
 }
 
-.text-input {
+/* .text-input {
   margin: 10px 10px 10px 0px;
-}
+} */
 
 .input-label {
-  margin-top: 5px;
+  padding: 10px 0px;
   color: #7B8BAD;
   font-size: 14px;
 }
@@ -734,7 +735,7 @@ Media Queries
 
   input[type=text] {
     width: 90%;
-    margin: 10px 0px 7px 0px;
+    /* margin: 10px 0px 7px 0px; */
   }
 
   .modal-btn {
