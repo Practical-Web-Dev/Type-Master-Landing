@@ -167,7 +167,7 @@ Payment Modal
   background: #fff;
   display: none;
   width: 600px;
-  height: 450px;
+  height: 470px;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -212,12 +212,12 @@ input[type=text] {
   width: 220px;
 }
 
-/* .text-input {
+.text-input {
   margin: 10px 10px 10px 0px;
-} */
+}
 
 .input-label {
-  padding: 10px 0px;
+  padding: 8px 0px;
   color: #7B8BAD;
   font-size: 14px;
 }
@@ -558,7 +558,7 @@ Media Queries
 
 */
 
-@media screen and (max-width: 1368px) {
+@media screen and (max-width: 1369px) {
 
   .square {
     display: none;
@@ -579,6 +579,12 @@ Media Queries
     width: 500px;
     height: 554px;
     margin: 0 1.5rem;
+  }
+
+  #payment-modal {
+
+    height: 500px;
+
   }
 
 }
@@ -649,9 +655,11 @@ Media Queries
 @media screen and (max-width: 1024px) {
 
   #payment-modal {
-    height: 100%;
+    height: 500px;
     padding-bottom: 3rem;
     overflow-y: scroll;
+    margin: 4rem 0rem;
+
   }
 
   .pre-order-text h1 {
