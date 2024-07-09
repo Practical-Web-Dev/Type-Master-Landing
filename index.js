@@ -45,11 +45,7 @@ emailInput.classList.add("error-border")
 
 errorMessage.textContent = "Email can't be empty";
 
-} else if (!checkEmail(emailInput.vlaue)){
-
-errorMessage.textContent = "Email must have an @ symbol and match correct email format";
-
-console.log("Email has been checked")
+} else {
 
 }
 
