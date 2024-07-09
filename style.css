@@ -865,4 +865,8 @@ Media Queries
     font-size: 42px;
   }
 
+  .input-flex-container {
+    margin: 20px 0px;
+  }
+
 }
