@@ -746,7 +746,8 @@ Media Queries
   .email-modal {
 
     width: 90%;
-    height: 380px;
+    height: 420px;
+    overflow-y: scroll;
   }
 
   .modal-form input {
