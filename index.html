@@ -32,16 +32,8 @@
   <div id="payment-modal">
     <div class="close-payement-modal">X</div>
     <div class="pl-4">
-      <h3>Payment Methods</h3>
       <form id="payment-form">
-        <div class="radio-container">
-          <input type="radio" id="credit-card-radio" name="payment-input" value="Debit or Credit Card">
-          <label class="radio-label" for="credit-card-radio">Debit or Credit Card</label>
-        </div>
-        <div class="radio-container">
-          <input type="radio" id="paypal-radio" name="payment-input" value="PayPal">
-          <label for="credit-card-radio">PayPal</label>
-        </div>
+        <h3>Payment Information</h3>
         <div class="input-flex-container">
           <div class="text-input">
             <input type="text" required>
@@ -65,6 +57,21 @@
         <div class="input-container">
           <input id="date-input" type="text" placeholder="MM/YY" minlength="5" maxlength="4" required>
           <p class="input-label">Card Expiration</p>
+        </div>
+        <h3 class="shipping-info-heading">Shipping Info</h3>
+        <div class="input-flex-container">
+          <div class="input-container">
+            <input type="text" required>
+            <p class="input-label">Street Address</p>
+          </div>
+          <div class="input-container">
+            <input id="zipcode-input" type="text" required placeholder="12345">
+            <p class="input-label">Zip Code</p>
+          </div>
+        </div>
+        <div class="input-container">
+          <input id="state-input" type="text" placeholder="AR" required>
+          <p class="input-label">State</p>
         </div>
         <button type="submit" id="payment-btn">Place Order</button>
       </form>

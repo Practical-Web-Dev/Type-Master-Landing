@@ -182,6 +182,8 @@ Payment Modal
   transform: translate(-50%, -50%);
   position: fixed;
   z-index: 2;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
 }
 
 .close-payement-modal {
@@ -208,10 +210,6 @@ Payment Modal
 }
 
 
-.radio-container {
-  margin-bottom: 10px;
-}
-
 input[type=text] {
   padding: 7px;
   width: 220px;
@@ -234,6 +232,18 @@ input[type=text] {
 
 #date-input {
   width: 120px;
+}
+
+.shipping-info-heading {
+  margin-top: 10px;
+}
+
+#zipcode-input {
+  width: 100px;
+}
+
+#state-input {
+  width: 50px;
 }
 
 #payment-btn {
