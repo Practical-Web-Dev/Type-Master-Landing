@@ -146,6 +146,12 @@ Email Modal
   border: 2px solid red;
 }
 
+#email-success {
+  display: none;
+  margin: 5px 0px;
+  color: green;
+}
+
 /* 
 
 
@@ -211,6 +217,7 @@ input[type=text] {
   width: 220px;
 }
 
+
 .text-input {
   margin: 10px 10px 10px 0px;
 }
@@ -221,6 +228,13 @@ input[type=text] {
   font-size: 14px;
 }
 
+#cvc-input {
+  width: 120px;
+}
+
+#date-input {
+  width: 120px;
+}
 
 #payment-btn {
   width: 150px;
