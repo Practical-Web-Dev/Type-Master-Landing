@@ -46,16 +46,18 @@
         </div>
         <div class="input-flex-container">
           <div class="text-input">
-            <input type="text" placeholder="Credit Card Number" minlength="16" maxlength="16" required>
+            <input type="text" placeholder="1234 5678 9000 0000" minlength="16" maxlength="16" pattern="^[0-9]+$"
+              required>
             <p class="input-label">Credit Card Number</p>
           </div>
           <div>
-            <input id="cvc-input" type="text" placeholder="(CVC)" minlength="3" maxlength="3" required>
+            <input id="cvc-input" type="text" placeholder="(CVC)" minlength="3" maxlength="3" pattern="^[0-9]+$"
+              required>
             <p class="input-label">Security Code</p>
           </div>
         </div>
         <div class="input-container">
-          <input id="date-input" type="text" placeholder="MM/YY" minlength="5" maxlength="4" required>
+          <input id="date-input" type="text" placeholder="0626" minlength="4" maxlength="4" pattern="^[0-9]+$" required>
           <p class="input-label">Card Expiration</p>
         </div>
         <h3 class="shipping-info-heading">Shipping Info</h3>
@@ -65,12 +67,14 @@
             <p class="input-label">Street Address</p>
           </div>
           <div class="input-container">
-            <input id="zipcode-input" type="text" required placeholder="12345">
+            <input id="zipcode-input" type="text" minlength="5" maxlength="5" pattern="^[0-9]+$" placeholder="12345"
+              required>
             <p class="input-label">Zip Code</p>
           </div>
         </div>
         <div class="input-container">
-          <input id="state-input" type="text" placeholder="AR" required>
+          <input id="state-input" minlength="2" maxlength="2" pattern="^[A-Za-z]+$" type="text" placeholder="AR"
+            required>
           <p class="input-label">State</p>
         </div>
         <button type="submit" id="payment-btn">Place Order</button>
