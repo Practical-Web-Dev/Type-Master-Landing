@@ -9,12 +9,14 @@ const preOrderBtns = document.querySelectorAll(".pre-order-btn")
 const closePaymentModal = document.querySelector(".close-payement-modal")
 const popupModalForm = document.getElementById("popup-modal-form")
 const emailSuccessMsg = document.getElementById("email-success")
+const paymentForm = document.getElementById("payment-form");
 
 
 //EVENT LISTENERS
 popupModalForm.addEventListener("submit", submitPopupForm)
 closeModal.addEventListener("click", closeModalClick)
 closePaymentModal.addEventListener("click", closePayement)
+paymentForm.addEventListener("submit", paymentSuccess)
 
 
 
@@ -57,6 +59,26 @@ paymentModal.style.display = "Block"
 })
 
 })
+
+function paymentSuccess (e) {
+
+
+e.preventDefault();
+
+paymentForm.innerHTML = 
+
+`
+<div class="success-message-container">
+<h2 class="payement-success-heading">Thank You!<h2/>
+<p class=payment-success-message>Your order has been receieved. Please check your email for your confirmation number and tracking information.</p>
+<img class="payment-success-img" src="img/desktop/image-keyboard.jpg"
+</div>
+
+
+
+`
+
+} 
 
 function closePayement () {
 
